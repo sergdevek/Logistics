@@ -1,0 +1,17 @@
+@use '../../styles/variables.scss' as variables;
+
+.access {
+    text-align: center;
+
+    .select {
+        width: 12.5em;
+        margin-top: 5em;
+        text-align: center;
+        @media (min-width: map-get(variables.$gridBreakpoints, 'sm')) {
+            width: 16em;
+        }
+        @media (min-width: map-get(variables.$gridBreakpoints, 'lg')) {
+            width: 20em;
+        }
+    }
+}

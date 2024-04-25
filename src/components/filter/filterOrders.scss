@@ -1,0 +1,18 @@
+@use '../../styles/variables.scss' as variables;
+
+#filter {
+    display: none;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    min-height: 100%;
+
+    @media (min-width: map-get(variables.$gridBreakpoints, 'sm')) {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    @media (min-width: map-get(variables.$gridBreakpoints, 'lg')) {
+        margin-left: 6.5em;
+        margin-right: 6.5em;
+    }
+}

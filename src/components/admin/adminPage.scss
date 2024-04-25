@@ -1,0 +1,62 @@
+@use '../../styles/variables.scss' as variables;
+
+.filterBorder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: 3.5em;
+
+    @media (min-width: map-get(variables.$gridBreakpoints, 'sm')) {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    @media (min-width: map-get(variables.$gridBreakpoints, 'lg')) {
+        padding-left: 6.5em;
+        padding-right: 6.5em;
+    }
+
+    .leftBlock {
+        display: flex;
+        gap: 0.5em;
+
+        @media (min-width: map-get(variables.$gridBreakpoints, 'sm')) {
+            gap: 1em;
+        }
+
+        @media (min-width: map-get(variables.$gridBreakpoints, 'lg')) {
+            gap: 1.5em;
+        }
+    }
+
+    .rightBlock {
+        display: flex;
+        align-items: end;
+    }
+}
+
+.table {
+    max-width: 100vw;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: 3.5em;
+
+    @media (min-width: map-get(variables.$gridBreakpoints, 'sm')) {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    @media (min-width: map-get(variables.$gridBreakpoints, 'lg')) {
+        padding-left: 6.5em;
+        padding-right: 6.5em;
+    }
+
+    .ordersTable {
+        display: flex;
+        flex-direction: column;
+        margin: 0em;
+    }
+}
